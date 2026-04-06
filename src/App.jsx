@@ -23,10 +23,6 @@ import WasherDryerRepairPage from './pages/WasherDryerRepairPage.jsx';
 import WaterHeaterRepairPage from './pages/WaterHeaterRepairPage.jsx';
 import PaintRenovationPage from './pages/PaintRenovationPage.jsx';
 
-// Admin
-import { AdminAuthProvider } from './contexts/AdminAuthContext.jsx';
-import AdminProtectedRoute from './components/AdminProtectedRoute.jsx';
-import AdminLayout from './components/AdminLayout.jsx';
 
 function App() {
   return (
@@ -34,11 +30,27 @@ function App() {
       <ThemeProvider>
         <Router>
           <ScrollToTop />
-          <AdminAuthProvider>
             <Routes>
+              {/* Public Routes */}
+              <Route path="/" element={<HomePage />} />
+              <Route path="/services" element={<ServicesPage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/team" element={<TeamPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+
+              {/* Service Landing Pages */}
+              <Route path="/services/washing-machine-repair" element={<WashingMachineRepairPage />} />
+              <Route path="/services/refrigerator-repair" element={<RefrigeratorRepairPage />} />
+              <Route path="/services/air-conditioner-repair" element={<AirConditionerRepairPage />} />
+              <Route path="/services/oven-repair" element={<OvenRepairPage />} />
+              <Route path="/services/oven-cooktop-repair" element={<OvenCooktopRepairPage />} />
+              <Route path="/services/washer-dryer-repair" element={<WasherDryerRepairPage />} />
+              <Route path="/services/water-heater-repair" element={<WaterHeaterRepairPage />} />
+              <Route path="/services/paint-renovation" element={<PaintRenovationPage />} />
+
+  
               
             </Routes>
-          </AdminAuthProvider>
           <Toaster />
         </Router>
       </ThemeProvider>
