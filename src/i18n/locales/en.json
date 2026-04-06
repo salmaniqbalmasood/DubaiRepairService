@@ -1,0 +1,103 @@
+
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "team": "Team",
+    "contact": "Contact"
+  },
+  "common": {
+    "book_repair": "Book a Repair",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "view_all": "View All",
+    "read_more": "Read More",
+    "get_directions": "Get Directions"
+  },
+  "admin": {
+    "theme_settings": "Theme Settings",
+    "language_settings": "Language Settings",
+    "translations": "Translations",
+    "pages": "Pages",
+    "sections": "Sections",
+    "images": "Images"
+  },
+  "home": {
+    "hero_badge": "#1 Rated Repair Service in Dubai",
+    "hero_title_1": "Professional appliance",
+    "hero_title_2": "repair services",
+    "hero_desc": "Expert repairs for AC units, refrigerators, ovens, and heaters. Fast, reliable service you can trust to keep your home running smoothly.",
+    "view_services": "View our services",
+    "stats_years": "Years in Business",
+    "stats_customers": "Customers Served",
+    "stats_projects": "Projects Completed",
+    "stats_team": "Team Members",
+    "intro_title": "Your trusted repair partner",
+    "intro_desc": "With years of experience serving Dubai residents and businesses, we specialize in diagnosing and repairing all major appliance brands. Our certified technicians bring expertise, professionalism, and a commitment to quality service.",
+    "feature_1_title": "Expert technicians",
+    "feature_1_desc": "Certified professionals with years of experience in appliance repair",
+    "feature_2_title": "Fast response",
+    "feature_2_desc": "Quick turnaround times to get your appliances working again",
+    "feature_3_title": "Quality guaranteed",
+    "feature_3_desc": "All repairs backed by our satisfaction guarantee",
+    "feature_4_title": "Customer focused",
+    "feature_4_desc": "Dedicated to providing exceptional service and support",
+    "testimonials_title": "What our customers say",
+    "testimonials_desc": "Don't just take our word for it. Read what thousands of satisfied Dubai residents have to say about our services.",
+    "team_title": "Meet our expert team",
+    "team_desc": "Our certified technicians are the backbone of our success. Highly trained, professional, and ready to solve any appliance issue.",
+    "view_full_team": "View Full Team",
+    "location_title": "Visit Our Service Center",
+    "location_desc": "Conveniently located in the heart of Dubai. Drop by or contact us for immediate assistance with your appliances.",
+    "contact_details": "Contact Details",
+    "contact_reach_out": "Reach out to us for any inquiries or to schedule a repair.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "business_hours": "Business Hours"
+  },
+  "services": {
+    "page_title": "Our repair services",
+    "page_desc": "Professional appliance repair services in Dubai. We specialize in AC, fridge, oven, and heater repairs with certified technicians and quality parts.",
+    "loading": "Loading services..."
+  },
+  "team": {
+    "page_title": "Meet Our Experts",
+    "page_desc": "Our team of certified professionals brings decades of combined experience to ensure your appliances are in the best hands.",
+    "loading": "Loading team members...",
+    "experience_years": "years experience"
+  },
+  "about": {
+    "story_title": "Our Story",
+    "story_desc": "Building trust through exceptional service. We are Dubai's premier appliance repair specialists.",
+    "excellence_title": "15+ Years of Excellence in Dubai",
+    "mission_default": "Providing reliable, professional repair services to Dubai residents.",
+    "desc_default": "We understand the unique challenges of maintaining appliances in Dubai's climate. Whether it's an AC unit working overtime in the summer heat or a refrigerator keeping your groceries fresh, we know how critical these systems are to your daily life.\n\nOver the past 15 years, we have continuously invested in training our team on the latest technologies and brands, ensuring that no matter how modern or complex your appliance is, we have the expertise to fix it right the first time.",
+    "values_title": "Our Core Values",
+    "values_desc": "These principles guide every repair, every interaction, and every decision we make as a company.",
+    "value_1_title": "Quality First",
+    "value_1_desc": "We never compromise on the quality of our parts or our workmanship. Every repair is built to last.",
+    "value_2_title": "Absolute Reliability",
+    "value_2_desc": "When we say we will be there, we mean it. You can count on our punctuality and transparent communication.",
+    "value_3_title": "Professionalism",
+    "value_3_desc": "From our uniforms to our clean-up process, we maintain the highest standards of professional conduct.",
+    "value_4_title": "Customer Satisfaction",
+    "value_4_desc": "Your peace of mind is our ultimate goal. We are not satisfied until your appliance is running perfectly.",
+    "cert_title": "Certified & Trusted",
+    "cert_desc": "We maintain the highest industry standards to guarantee your safety and satisfaction.",
+    "cta_title": "Ready to experience the difference?",
+    "cta_desc": "Join thousands of satisfied customers in Dubai. Contact us today for fast, reliable, and professional repair services.",
+    "cta_button": "Book a Repair Now"
+  },
+  "contact": {
+    "page_title": "Get in touch",
+    "page_desc": "Have a question or need repair service? We're here to help. Contact us today and our team will respond promptly.",
+    "form_title": "Send us a message",
+    "form_desc": "Fill out the form below and we'll get back to you as soon as possible"
+  }
+}

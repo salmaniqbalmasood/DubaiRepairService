@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* --- Base Colors (Deep Navy / Charcoal) --- */
+    --background: 210 25% 7%;
+    --foreground: 0 0% 98%;
+
+    /* --- Elevation Levels (Surface Colors) --- */
+    --card: 225 28% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 225 28% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    /* --- Brand Primary (Professional Orange) --- */
+    --primary: 20 90% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    /* --- UI Accents & Borders --- */
+    --secondary: 218 23% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 218 23% 18%;
+    --muted-foreground: 215 15% 70%;
+
+    --accent: 20 90% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 218 23% 20%;
+    --input: 218 23% 18%;
+    --ring: 20 90% 58%;
+
+    --radius: 0.75rem;
+
+    /* Custom Brand HSL helper */
+    --brand-orange-glow: 20 90% 58% / 0.15;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-white;
+    overflow-x: clip;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight text-white/95;
+    text-wrap: balance;
+  }
+
+  p {
+    @apply text-muted-foreground leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-card/40 backdrop-blur-xl border border-white/5;
+  }
+
+  .animate-marquee {
+    animation: marquee var(--duration, 30s) linear infinite;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .animate-pulse-subtle {
+    animation: pulse-subtle 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse-subtle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.9; transform: scale(1.03); }
+  }
+
+  .text-gradient-orange {
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-[hsl(var(--primary))] to-[#ff9d7d];
+  }
+
+  .hover-glow-orange {
+    @apply transition-all duration-300;
+  }
+
+  .hover-glow-orange:hover {
+    @apply -translate-y-1 border-primary/40;
+    box-shadow: 0 10px 40px -10px hsla(var(--brand-orange-glow));
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Mobile Responsive Utilities */
+  .hero-responsive-height {
+    min-height: 60vh;
+  }
+  @media (min-width: 768px) {
+    .hero-responsive-height {
+      min-height: 85dvh;
+    }
+  }
+
+  .trust-badges-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  @media (min-width: 768px) {
+    .trust-badges-responsive {
+      gap: 1.5rem;
+    }
+  }
+}
